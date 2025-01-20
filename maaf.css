@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', raleway, sans-serif;
+    background-image: url('love.jpeg'); /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover; /* Menyesuaikan gambar agar sesuai dengan seluruh layar */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #fff; /* Pastikan teks terlihat jika gambar terang */
+}
+
+
+.container {
+    padding: 20px;
+    background: #fff;
+    border: 2px solid #f7c5a8;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff6f61;
+    margin: 0;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.message {
+    font-size: 1.2em;
+    color: #333;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.no-button {
+    background-color: #ff4c3b;
+    position: relative;
+}
+
+.response {
+    font-size: 1.5em;
+    color: #ff6f61;
+    margin-top: 20px;
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
